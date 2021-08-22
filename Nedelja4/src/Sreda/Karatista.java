@@ -3,7 +3,7 @@ package Sreda;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Karatisti {
+public class Karatista {
     private String ime;
     private int godine;
     private String rang;
@@ -46,7 +46,7 @@ public class Karatisti {
         this.kata = kata;
     }
 
-    public Karatisti(String ime, int godine, String rang, String[] kata) {
+    public Karatista(String ime, int godine, String rang, String[] kata) {
         this.ime = ime;
         this.godine = godine;
         if (rang.matches("[1-9]Kyu") || rang.matches("10Kyu") || rang.matches("[1-9]Dan") || rang.matches("10Dan")){
