@@ -20,16 +20,16 @@ public class Test {
         System.out.println("--------");
         System.out.println(posta);
         System.out.println("--------");
-        posta.change(posta.get(0), "qwert");
+        posta.change(p.get(0), "qwert");
         System.out.println("--------");
         System.out.println(posta);
         System.out.println("--------");
-        posta.send(posta.get(0));
+        posta.send(p.get(0));
         System.out.println("--------");
         System.out.println(posta);
         System.out.println("--------");
         System.out.println("--------");
-        System.out.println(posta.isplata(posta.get(0)));
+        System.out.println(posta.isplata(p.get(0)));
         System.out.println("--------");
     }
 }

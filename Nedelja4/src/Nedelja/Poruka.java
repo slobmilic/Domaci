@@ -60,6 +60,11 @@ public class Poruka {
     // {poruka}
     public void posalji(){
         //TODO: Implement me
+        if (suma > 0){
+            System.out.println(posiljalac + " salje " + suma + " para " + primalac + "-u, uz poruku: " + poruka);
+        } else {
+            System.out.println(posiljalac + " primac " + suma + " para od " + primalac + "-a, uz poruku: " + poruka);
+        }
 
     }
 
@@ -68,6 +73,6 @@ public class Poruka {
 
     @Override
     public String toString() {
-        return "Poruka{}";
+        return posiljalac + " i " + primalac + " vrse transakciju od " + suma + ", uz poruku: " + poruka + "(" + id + ")";
     }
 }
