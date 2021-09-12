@@ -15,7 +15,6 @@ WHERE employee_id IN
 
 
 --zadatak 3
-
 SELECT countries.country_name FROM employees
 INNER JOIN departments ON departments.department_id = employees.department_id
 INNER JOIN locations ON locations.location_id = departments.location_id
