@@ -19,8 +19,7 @@ WHERE employee_id IN
 SELECT countries.country_name FROM employees
 INNER JOIN departments ON departments.department_id = employees.department_id
 INNER JOIN locations ON locations.location_id = departments.location_id
-INNER JOIN countries ON countries.country_id = locations.country_id
- 
+INNER JOIN countries ON countries.country_id = locations.country_id 
 GROUP BY country_name
 ORDER BY SUM(employees.salary) DESC;
 
