@@ -26,8 +26,7 @@ public class Nedelja {
                 for (int j = 0; j < x.length; j++) {
                     x[j] = (int) (Math.random() * 100);
                 }
-                writer.write("assertEquals(new int[]{" + Arrays.toString(sortedZeros(x)).replaceAll("]", "").replaceAll("\\[", "") + "}, 
-                             Nedelja.sortedZeros(new int[]{" + Arrays.toString(x).replaceAll("]", "").replaceAll("\\[", "") + "}));");
+                writer.write("assertEquals(new int[]{" + Arrays.toString(sortedZeros(x)).replaceAll("]", "").replaceAll("\\[", "") + "}, Nedelja.sortedZeros(new int[]{" + Arrays.toString(x).replaceAll("]", "").replaceAll("\\[", "") + "}));");
                 writer.newLine();
             }
             writer.close();
