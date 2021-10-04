@@ -18,7 +18,6 @@ public class Nedelja {
         return arrNew;
     }
 
-
     public static void main(String[] args) {
         try{
         BufferedWriter writer = new BufferedWriter(new FileWriter("randomTests.txt"));
